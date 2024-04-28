@@ -1,0 +1,124 @@
+:root {
+    --cor_1: #91E0F2;
+    --cor_2: #6BCCF2;
+    --cor_3: #52B5F2;
+    --cor_4: #27A4F2;
+    --cor_black: #1d0c20;
+    --cor_white: #ffffff;
+}
+
+
+body {
+    background-image: url(../img/bg_white.png);
+    background-position: center;
+    background-attachment: fixed;
+    padding: 0px;
+    margin: 0px;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    background-color: var(--cor_2);
+    width: auto;
+    padding: 10px;
+}
+
+.header img {
+    width: 1200px;
+    height: 100px;
+    border: 3px solid var(--cor_black);
+    border-radius: 60px;
+}
+
+.container {
+    display: flex;
+    margin: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.box {
+    margin: 10px;
+    max-width: 450px;
+    background-color: var(--cor_3);
+    color: var(--cor_black);
+    border: 3px solid var(--cor_3);
+    font-family: cursive;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    background-color: var(--cor_4);
+    color: var(--cor_black);
+    transition: 0.5s;
+}
+
+#ficha {
+    background-color: var(--cor_1);
+    border: 3px solid var(--cor_black);
+    border-radius: 30px;
+    padding: 10px;
+    width: 100px;
+}
+
+.box img {
+    width: 100%;
+}
+
+.box h2 {
+    text-align: center;
+}
+
+.box p {
+    padding: 10px;
+    text-align: justify;
+    font-size: 18px;
+}
+
+span {
+    display: block;
+    padding: 3px 10px;
+}
+
+.old {
+    max-width: max-content;
+    color: #ff0000;
+    font-size: 17px;
+    text-decoration: line-through;
+}
+
+.new {
+    max-width: max-content;
+    color: #008000;
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+.footer {
+    border: 8px solid var(--cor_2);
+    background-color: var(--cor_2);
+    font-size: 18px;
+    text-align: center;
+    line-height: 50px;
+    color: var(--cor_black);
+}
+
+/* Tela de computador */
+@media screen and (max-width: 1024px) {
+    .header img {
+        width: 950px;
+        height: 95px;
+    }
+}
+
+/* Tela de tablet */
+@media screen and (max-width: 768px) {
+    .header img {
+        width: 750px;
+        height: 90px;
+    }
+}
